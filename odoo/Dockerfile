@@ -115,6 +115,9 @@ RUN if [ ${ODOO_INSTALL_JEKYLL} = true ]; then \
 # instalación del módulo debugpy
 RUN pip3 install debugpy
 
+# instalación del módulo geopy
+RUN pip3 install geopy
+
 # creación de la carpeta de almacenamiento de documentos
 ARG REPO_PATH_CONTAINER=/mnt/odoo-repo
 RUN mkdir -p ${REPO_PATH_CONTAINER}
